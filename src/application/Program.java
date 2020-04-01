@@ -13,14 +13,14 @@ public class Program {
 		Dados dados = new Dados(); 
 					
 		System.out.println("Informa altura: ");
-		dados.altura = sc.nextDouble();
+		dados.setAltura(sc.nextDouble());
 
 		System.out.println("Informa peso: " );
-		dados.peso = sc.nextInt();
+		dados.setPeso(sc.nextInt());
 		
-		dados.calculaImc(dados.altura, dados.peso);
+		dados.calculaImc(dados.getAltura(), dados.getPeso());
 			
-		System.out.printf("Indice Massa Corporea = %.2f%n ", + dados.indiceMC );
+		System.out.printf("Indice Massa Corporea = %.2f%n ", + dados.getIndiceMC() );
 		
 		sc.close();
 	}

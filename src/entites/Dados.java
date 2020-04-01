@@ -2,9 +2,9 @@ package entites;
 
 public class Dados {
 
-	public double altura; 
-	public int peso;
-	public double indiceMC;
+	private double altura; 
+	private int peso;
+	private double indiceMC;
 	
 	public Dados() {
 		super();
@@ -17,7 +17,32 @@ public class Dados {
 	}
 
 	public double calculaImc(double altura, int peso) {	
-		indiceMC = peso/(altura * altura);
+		this.indiceMC = peso/(altura * altura);
 		return indiceMC;
 	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+
+	public double getIndiceMC() {
+		return indiceMC;
+	}
+
+	public void setIndiceMC(double indiceMC) {
+		this.indiceMC = indiceMC;
+	}
+	
 }
